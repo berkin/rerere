@@ -9,6 +9,8 @@ import Categories from './components/Categories';
 import Product from './components/Product';
 import ContactUs from './components/ContactUs';
 
+import Login from './components/Login';
+
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path='/' component={App}>
@@ -19,6 +21,7 @@ ReactDOM.render((
       </Route>
 
       <Route path='/contact-us' component={ContactUs} />
+      <Route path='/login' component={Login} />
     </Route>
   </Router>
 ), document.getElementById('app'));
