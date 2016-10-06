@@ -1,27 +1,23 @@
 import React from 'react';
+import Product from './Product';
 
 class FeaturedProduct extends React.Component {
 
     constructor() {
         super();
-
-        this.state = {
-			img: {
-				src: 'featured.jpg',
-				alt: 'featured'
-			},
-			title: 'Featured Product',
-			excerpt: 'Featured product excerpt'
-		};
     }
 
     render() {
+         const featuredProduct = {
+            img: {
+                src: 'featured.jpg',
+                alt: 'featured'
+            },
+            title: 'Featured Product',
+            excerpt: 'Featured product excerpt'
+        };
         return (
-        	<div>
-        		<img src={this.state.img.src} alt={this.state.img.alt} />
-        		<h1>{this.state.title}</h1>
-        		<p>{this.state.excerpt}</p>
-        	</div>
+            <Product {...featuredProduct} className={'featured-product'} />
         );
     }
 }
