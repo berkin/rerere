@@ -7,7 +7,6 @@ class Home extends React.Component {
         super();
     }
     render() {
-        debugger;
         const products = data['products'];
 
         return (
