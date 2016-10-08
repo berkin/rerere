@@ -13,6 +13,7 @@ class App extends React.Component {
             <header>
               <div>Logo</div>
               <ul>
+                <li><Link to='/'>Home</Link></li>
                 <li><Link to='/about-us'>About Us</Link></li>
                 <li><Link to='/categories'>Categories</Link></li>
                 <li><Link to='/contact-us'>Contact Us</Link></li>
