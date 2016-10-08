@@ -1,12 +1,12 @@
 import React from 'react';
-import Product from './Product';
+import ProductExcerpt from './ProductExcerpt';
 
 class ProductList extends React.Component {
     constructor() {
         super();
     }
     render() {
-    	const nodes = this.props.data.map((product) => { return <Product {...product} /> });
+    	const nodes = this.props.data.map((product) => { return <ProductExcerpt key={product.id} {...product} /> });
 
         return (
         	<div>

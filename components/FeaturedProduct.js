@@ -1,5 +1,5 @@
 import React from 'react';
-import Product from './Product';
+import ProductExcerpt from './ProductExcerpt';
 
 class FeaturedProduct extends React.Component {
 
@@ -8,16 +8,15 @@ class FeaturedProduct extends React.Component {
     }
 
     render() {
-         const featuredProduct = {
-            img: {
-                src: 'featured.jpg',
-                alt: 'featured'
-            },
-            title: 'Featured Product',
-            excerpt: 'Featured product excerpt'
-        };
+        let featuredProduct;
+        data['products'].forEach((product) => {
+            if ( product.featured === true ) {
+                featuredProduct = product;
+            }
+        });
+
         return (
-            <Product {...featuredProduct} className={'featured-product'} />
+            <ProductExcerpt {...featuredProduct} className={'featured-product'} />
         );
     }
 }
