@@ -6,11 +6,20 @@ class Product extends React.Component {
     }
 
     render() {
+        let item;
+        data['products'].forEach((product) => {
+            if ( product.slug === this.props.params.slug ) {
+                item = product;
+            }
+        })
         return (
-        	<div className={`product ${this.props.className || ''} `}>
-        		<img src={this.props.img.src} alt={this.props.img.alt} />
-        		<h1>{this.props.title}</h1>
-        		<p>{this.props.excerpt}</p>
+        	<div className='product-detail'>
+    			<img src={item.img.src} alt={item.img.alt} />
+    			<h1>{item.title}</h1>
+    			<p>{item.excerpt}</p>
+                <div>
+                    {item.description}
+                </div>
         	</div>
         );
     }

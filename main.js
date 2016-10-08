@@ -16,9 +16,8 @@ ReactDOM.render((
     <Route path='/' component={App}>
       <Route path='/about-us' component={AboutUs} />
 
-      <Route path='/categories' component={Categories}>
-        <Route path='/:product-slug' component={Product} />
-      </Route>
+      <Route path='/categories' component={Categories} />
+      <Route path='/product/:slug' component={Product} />
 
       <Route path='/contact-us' component={ContactUs} />
       <Route path='/login' component={Login} />
