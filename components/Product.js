@@ -11,7 +11,8 @@ class Product extends React.Component {
             if ( product.slug === this.props.params.slug ) {
                 item = product;
             }
-        })
+        });
+        
         return (
         	<div className='product-detail'>
     			<img src={item.img.src} alt={item.img.alt} />
