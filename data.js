@@ -43,5 +43,33 @@ const data = {
             src: 'http://lorempixel.com/100/100/technics?4',
             alt: 'Product 4'
         }
-    }]
+    }],
+    categories: [
+        {
+            id: 1,
+            slug: 'category-1',
+            name: 'Category 1'
+        },
+        {
+            id: 2,
+            slug: 'category-2',
+            name: 'Category 2'
+        },        
+        {
+            id: 3,
+            slug: 'category-3',
+            name: 'Category 3'
+        },       
+        {
+            id: 4,
+            slug: 'category-4',
+            name: 'Category 4'
+        },        
+        {
+            id: 5,
+            slug: 'category-5',
+            name: 'Category 5'
+        },
+
+    ]
 }
