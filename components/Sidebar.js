@@ -1,11 +1,16 @@
 import React from 'react';
+import Categories from 'Categories';
 
 class Sidebar extends React.Component {
     constructor() {
         super();
     }
     render() {
-        return <div>Sidebar</div>;
+        return (
+        	<div>
+        		<Categories />
+        	</div>
+        	);
     }
 }
 

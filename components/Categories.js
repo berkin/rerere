@@ -5,7 +5,12 @@ class Categories extends React.Component {
         super();
     }
     render() {
-        return <div>Categories</div>;
+    	const nodes = data['categories'].map((category) => { return <div key={category.id}>{category.name}</div> });
+        return (
+        	<div>
+        	{nodes}
+        	</div>
+        	);
     }
 }
 
