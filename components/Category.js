@@ -5,7 +5,11 @@ class Category extends React.Component {
         super();
     }
     render() {
-        return <div>Category</div>;
+        return (
+        	<div>
+        		Category
+        	</div>
+        );
     }
 }
 
